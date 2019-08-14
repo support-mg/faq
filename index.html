@@ -12,7 +12,9 @@
 
 <body>
     <div class="row">
-        <div class=" col-md-12 fixed center logo "><a href="https://makergear.zendesk.com/hc/en-us"><img src="faq-images/mg-k%20logo.png"></a></div>
+        <div class=" col-md-12 fixed center logo ">
+            <a href="https://makergear.zendesk.com/hc/en-us"><img src="faq-images/mg-k%20logo.png"></a>
+        </div>
     </div>
     <br>
     <div class="row">
@@ -48,10 +50,12 @@
             <!--Troubleshooting and Hardware -->
             <ul id="maint" class="multi-collapse">
 
-                 <li>
+                <li>
                     <h5 data-toggle="collapse" href="#power" role="button" aria-expanded="false" aria-controls="power">I can't jog my motors.</h5>
-                    <p class="collapse plus-icon" id="power">Please check your 6-pin power connector and make sure it is fully seated. If it is askew, you will be able to connect and even heat up your hotend and bed, but not jog the motors<br><br>
-                     If you can home your axes, but can't jog the motors, check the temperatures. If one of them is reading 0°C, make sure the wire is plugged in all the way. If it is, you will need to replace it. A bad thermistor will keep you from jogging the motors.</p>
+                    <p class="collapse plus-icon" id="power"><strong>M Series:</strong> Please check your 6-pin power connector and make sure it is fully seated. If it is askew, you will be able to connect and even heat up your hotend and bed, but not jog the motors. <br> If you can home your
+                        axes, but can't jog the motors, check the temperatures. If one of them is reading 0°C, make sure the wire is plugged in all the way. If it is, you will need to replace it. A bad thermistor will keep you from jogging the motors.<br>
+                        <strong>Ultra One:</strong> Try homing all axes prior to jogging them. If you are receiving an error please open a ticket on our <a href="https://www.makergear.com/pages/support">support page</a>.
+                    </p>
                 </li>
                 <li>
                     <h5 data-toggle="collapse" href="#guide" role="button" aria-expanded="false" aria-controls="guide">Print Quality troubleshooting.</h5>
@@ -71,7 +75,9 @@
                 </li>
                 <li>
                     <h5 data-toggle="collapse" href="#clog" role="button" aria-expanded="false" aria-controls="clog">How do I clear or prevent a clog?</h5>
-                    <p class="collapse" id="clog">For clog prevention and clearing, we suggest trying a Cold Pull.<br> The idea is to get old filament buildup order debris to stick to the filament so it can be extracted out of the hotend assembly. Check our our article on how to perform a <a href="https://makergear.zendesk.com/hc/en-us/articles/115005186283-The-Cold-Pull-Nozzle-Cleaning-Method">Cold Pull.</a> If you find that you still have a clog, we suggest <a href="https://makergear.zendesk.com/hc/en-us/articles/115005730183-V4-Hot-End-Removal-and-Installation-">unistalling the hotend</a> and then <a href="https://makergear.zendesk.com/hc/en-us/articles/115005694286-Removing-and-Installing-The-V4-Nozzle">removing the nozzle</a>. At this point soaking the nozzle in acetone overnight to loosen the clogged filament, or using a blowtorch is recommended.</p>
+                    <p class="collapse" id="clog">For clog prevention and clearing, we suggest trying a Cold Pull.<br> The idea is to get old filament buildup order debris to stick to the filament so it can be extracted out of the hotend assembly. Check our our article on how to perform
+                        a <a href="https://makergear.zendesk.com/hc/en-us/articles/115005186283-The-Cold-Pull-Nozzle-Cleaning-Method">Cold Pull.</a> If you find that you still have a clog, we suggest <a href="https://makergear.zendesk.com/hc/en-us/articles/115005730183-V4-Hot-End-Removal-and-Installation-">unistalling the hotend</a>                        and then <a href="https://makergear.zendesk.com/hc/en-us/articles/115005694286-Removing-and-Installing-The-V4-Nozzle">removing the nozzle</a>. At this point soaking the nozzle in acetone overnight to loosen the clogged filament,
+                        or using a blowtorch is recommended.</p>
                 </li>
                 <li>
                     <h5 data-toggle="collapse" href="#bed" role="button" aria-expanded="false" aria-controls="bed">How should I take care of my build surface?</h5>
@@ -80,12 +86,16 @@
                 </li>
                 <li>
                     <h5 data-toggle="collapse" href="#connect" role="button" aria-expanded="false" aria-controls="connect">The computer can't find the printer.</h5>
-                    <p class="collapse" id="connect">Does the onboard computer on the bottom left have a red and green light? If not, check your power cable. If so, check your wifi connections. Is your printer showing up as an access point? If so, repeat the setup process at <a href="http://setup.makergear.com">setup.makergear.com</a>. If it is not showing up try the <a href="http://setup.makergear.com/networkScan.html">Find My Printer Tool</a>.
+                    <p class="collapse" id="connect"><strong>M3 printers:</strong> <br>Does the onboard computer on the bottom left have a red and green light? <br>If not, check your power cable. If so, check your wifi connections. <br>Is your printer showing up as an access point? If
+                        so, repeat the setup process at <a href="http://setup.makergear.com">setup.makergear.com</a>. <br>If it is not showing up try the <a href="http://setup.makergear.com/networkScan.html">Find My Printer Tool</a>.<br><br>
+                        <strong>Ultra One:<br></strong> Try the <a href="http://setup.makergear.com/networkScan.html">Find My Printer Tool</a> <br> Try connecting to the IP address that is displayed on the LCD. <br> Try connecting to the printers wireless
+                        access point.
                     </p>
                 </li>
                 <li>
                     <h5 data-toggle="collapse" href="#start" role="button" aria-expanded="false" aria-controls="start">How do I know my start height is correct?</h5>
-                    <p class="collapse" id="start">You want your first layer to look a little flattened, not rounded. A good test is to look at the bottom of your prints. The farther away you get, the more stringy and defined the bottom will look. Closer, and you will start to get a mirror finish. Too far, and it will look underextruded or the base will be larger that it should be, "elephant foot". Check out this forum post on "<a href="http://forum.makergear.com/viewtopic.php?f=3&t=3047">The perfect first layer.</a>"
+                    <p class="collapse" id="start">You want your first layer to look a little flattened, not rounded. A good test is to look at the bottom of your prints. The farther away you get, the more stringy and defined the bottom will look. Closer, and you will start to get
+                        a mirror finish. Too far, and it will look underextruded or the base will be larger that it should be, "elephant foot". Check out this forum post on "<a href="http://forum.makergear.com/viewtopic.php?f=3&t=3047">The perfect first layer.</a>"
                     </p>
                 </li>
             </ul>
@@ -97,9 +107,9 @@
                     <p class="collapse" id="simplify">Simplify3D is a software program used in combination with the MakerGear 3D printers for slicing your 3D models in to Gcode. Click on this link to learn more. <a href="https://makergear.zendesk.com/hc/en-us/articles/360000268063-What-Is-Simplify3D-">What is Simplify3D?</a></p>
                 </li>
                 <li>
-                    <h5 data-toggle="collapse" href="#fff" role="button" aria-expanded="false" aria-controls="fff">Where do I get the S3D profiles for the M3?</h5>
-                    <p class="collapse" id="fff">Simplify3D profiles for your MakerGear M3 printer are available on our MakerGear Knowledge Base. <br>
-                        <a href="https://makergear.zendesk.com/hc/en-us/articles/115004464806-Simplify3D-Profiles-and-Factory-Files">Simplify3D profiles for your MakerGear M3.</a>
+                    <h5 data-toggle="collapse" href="#fff" role="button" aria-expanded="false" aria-controls="fff">Where do I get the S3D profiles for MakerGear printers?</h5>
+                    <p class="collapse" id="fff">Simplify3D profiles for your MakerGear printer are available on our MakerGear Knowledge Base. <br>
+                        <a href="https://makergear.zendesk.com/hc/en-us/articles/115004464806-Simplify3D-Profiles-and-Factory-Files">Simplify3D profiles for your MakerGear printer.</a>
                     </p>
                 </li>
                 <li>
@@ -108,9 +118,9 @@
                     </p>
                 </li>
                 <li>
-                    <h5 data-toggle="collapse" href="#dual" role="button" aria-expanded="false" aria-controls="dual">How do I setup a Dual color print with my M3ID?</h5>
+                    <h5 data-toggle="collapse" href="#dual" role="button" aria-expanded="false" aria-controls="dual">How do I setup a Dual color print with my MakerGear printer?</h5>
                     <p class="collapse" id="dual">Dual color prints can be set up by setting up separate processess for your extruders. Check out our article and video on how to set it up.<br>
-                        <a href="https://makergear.zendesk.com/hc/en-us/articles/115004637866-Dual-Color-Printing-with-Simplify3D">Dual color printing with the M3ID.</a></p>
+                        <a href="https://makergear.zendesk.com/hc/en-us/articles/115004637866-Dual-Color-Printing-with-Simplify3D">Dual color printing with MakerGear.</a></p>
                 </li>
                 <li>
                     <h5 data-toggle="collapse" href="#duplication" role="button" aria-expanded="false" aria-controls="duplication">How do I use Duplication Mode?</h5>
@@ -119,18 +129,18 @@
                         <a href="https://makergear.zendesk.com/hc/en-us/articles/115005877606-Duplication-Mode-in-Simplify3D">Duplication Mode in Simplify3D</a></p>
                 </li>
                 <li>
-                    <h5 data-toggle="collapse" href="#m3se" role="button" aria-expanded="false" aria-controls="m3se">How do I use Simplify3D with my M3-SE?</h5>
-                    <p class="collapse" id="m3se">We suggest downloading our Simplify3D profiles for the MakerGear M3 and getting familiar with the Simplify3d workflow.<br>
+                    <h5 data-toggle="collapse" href="#m3se" role="button" aria-expanded="false" aria-controls="m3se">How do I use Simplify3D with my MakerGear printer?</h5>
+                    <p class="collapse" id="m3se">We suggest downloading our Simplify3D profiles for MakerGear and getting familiar with the Simplify3d workflow.<br>
                         <a href="https://makergear.zendesk.com/hc/en-us/articles/115004464806-Simplify3D-Profiles-and-Factory-Files">Simplify3D Profiles and Factory Files.</a><br>
                         <a href="https://makergear.zendesk.com/hc/en-us/articles/115003052343-Simplify3D-Workflow">Simplify3D work flow.</a>
                     </p>
                 </li>
             </ul>
             <!--OctoPrint section -->
-            
+
             <ul id="octoprint" class="multi-collapse">
-                 <li>
-                    <h5 data-toggle="collapse" href="#log" role="button" aria-expanded="false" aria-controls="log">What is the  OctoPrint login information?</h5>
+                <li>
+                    <h5 data-toggle="collapse" href="#log" role="button" aria-expanded="false" aria-controls="log">What is the OctoPrint login information?</h5>
                     <p class="collapse plus-icon" id="log">The default username for you printer is: printer <br> The password is your serial number as it appears on your printer.</p>
                 </li>
                 <li>
@@ -141,7 +151,7 @@
                 <li>
                     <h5 data-toggle="collapse" href="#op2" role="button" aria-expanded="false" aria-controls="op2">Can I slice my files with OctoPrint?</h5>
                     <p class="collapse" id="op2">While we suggest you use Simplify3D, OctoPrint has a rudimentary onboard slicer.<br>
-                        <a href="https://makergear.zendesk.com/hc/en-us/articles/115002709903-OctoPrint-for-MakerGear-How-to-convert-an-STL-file-into-a-physical-object-">Slicing Models with OctoPrint</a></p>
+                        <a href="https://makergear.zendesk.com/hc/en-us/articles/115002709903-OctoPrint-for-MakerGear-How-to-convert-an-STL-file-into-a-physical-object-">Slicing Models with OctoPrint</a><br><br><em>The onboard slicer in OctoPrint is not compatible with the Ultra One.</em></p>
                 </li>
                 <li>
                     <h5 data-toggle="collapse" href="#op3" role="button" aria-expanded="false" aria-controls="op3">How do I view my models before printing?</h5>
@@ -149,20 +159,22 @@
                 </li>
                 <li>
                     <h5 data-toggle="collapse" href="#op4" role="button" aria-expanded="false" aria-controls="cop4"> How do I set up a static IP?</h5>
-                    <p class="collapse" id="op4">Depending on the demands of your work or home network configuration,<br> it may become necessary for you to set up a static IP address for your printer.<br> To do this you will need to SSH (remotely connect to the printer).<br><a href="https://makergear.zendesk.com/hc/en-us/articles/360000282583-Static-IP-Instructions">Static IP instructions</a> </p>
+                    <p class="collapse" id="op4">Depending on the demands of your work or home network configuration,<br> it may become necessary for you to set up a static IP address for your printer.<br> To do this you will need to SSH (remotely connect to the printer).<br><a href="https://makergear.zendesk.com/hc/en-us/articles/360000282583-Static-IP-Instructions">Static IP instructions</a>                        </p>
                 </li>
             </ul>
         </div>
         <!--third column -->
         <div class="col-md-3"></div>
     </div>
-   
-    
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="application/javascript" src="faq.js"></script>
-    <script>window.onload = addListeners;</script>
+    <script>
+        window.onload = addListeners;
+    </script>
 
 </body>
 
